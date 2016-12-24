@@ -12,9 +12,15 @@
 		8FA040721E0E1A4600A139EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA040711E0E1A4600A139EE /* SecondViewController.swift */; };
 		8FA040751E0E1A4600A139EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA040731E0E1A4600A139EE /* Main.storyboard */; };
 		8FA040771E0E1A4600A139EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA040761E0E1A4600A139EE /* Assets.xcassets */; };
+		8FA040801E0E202900A139EE /* CatsTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0407E1E0E202900A139EE /* CatsTV.xcdatamodeld */; };
+		8FA040821E0E206F00A139EE /* CatDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA040811E0E206F00A139EE /* CatDataStore.swift */; };
+		8FA040841E0E20D800A139EE /* CatVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA040831E0E20D800A139EE /* CatVideo.swift */; };
+		8FA040861E0E21A600A139EE /* CatsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA040851E0E21A600A139EE /* CatsApiClient.swift */; };
+		98BAC5D69734FB837C080CEF /* Pods_CatsTVNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB4B1977B3D2427C53C7F67 /* Pods_CatsTVNow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DD81D4BED901048C40C8A2D /* Pods-CatsTVNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsTVNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatsTVNow/Pods-CatsTVNow.release.xcconfig"; sourceTree = "<group>"; };
 		8FA0406A1E0E1A4600A139EE /* CatsTVNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsTVNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA0406D1E0E1A4600A139EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA0406F1E0E1A4600A139EE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		8FA040741E0E1A4600A139EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA040761E0E1A4600A139EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA040781E0E1A4600A139EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA0407F1E0E202900A139EE /* CatsTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatsTV.xcdatamodel; sourceTree = "<group>"; };
+		8FA040811E0E206F00A139EE /* CatDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatDataStore.swift; sourceTree = "<group>"; };
+		8FA040831E0E20D800A139EE /* CatVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatVideo.swift; sourceTree = "<group>"; };
+		8FA040851E0E21A600A139EE /* CatsApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsApiClient.swift; sourceTree = "<group>"; };
+		BB977EEBEF8A331ABD151856 /* Pods-CatsTVNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsTVNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatsTVNow/Pods-CatsTVNow.debug.xcconfig"; sourceTree = "<group>"; };
+		ECB4B1977B3D2427C53C7F67 /* Pods_CatsTVNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsTVNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BAC5D69734FB837C080CEF /* Pods_CatsTVNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49BF71482EF38FC070DBD3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4B1977B3D2427C53C7F67 /* Pods_CatsTVNow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FD43EE5F3AD28B70C188D1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB977EEBEF8A331ABD151856 /* Pods-CatsTVNow.debug.xcconfig */,
+				6DD81D4BED901048C40C8A2D /* Pods-CatsTVNow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8FA040611E0E1A4600A139EE = {
 			isa = PBXGroup;
 			children = (
 				8FA0406C1E0E1A4600A139EE /* CatsTVNow */,
 				8FA0406B1E0E1A4600A139EE /* Products */,
+				7FD43EE5F3AD28B70C188D1B /* Pods */,
+				49BF71482EF38FC070DBD3CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +89,11 @@
 				8FA0406D1E0E1A4600A139EE /* AppDelegate.swift */,
 				8FA0406F1E0E1A4600A139EE /* FirstViewController.swift */,
 				8FA040711E0E1A4600A139EE /* SecondViewController.swift */,
+				8FA040811E0E206F00A139EE /* CatDataStore.swift */,
+				8FA040851E0E21A600A139EE /* CatsApiClient.swift */,
+				8FA040831E0E20D800A139EE /* CatVideo.swift */,
 				8FA040731E0E1A4600A139EE /* Main.storyboard */,
+				8FA0407E1E0E202900A139EE /* CatsTV.xcdatamodeld */,
 				8FA040761E0E1A4600A139EE /* Assets.xcassets */,
 				8FA040781E0E1A4600A139EE /* Info.plist */,
 			);
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FA0407B1E0E1A4600A139EE /* Build configuration list for PBXNativeTarget "CatsTVNow" */;
 			buildPhases = (
+				398CBE657272C264C09A580B /* [CP] Check Pods Manifest.lock */,
 				8FA040661E0E1A4600A139EE /* Sources */,
 				8FA040671E0E1A4600A139EE /* Frameworks */,
 				8FA040681E0E1A4600A139EE /* Resources */,
+				B0F32F6E01CE23F0196980FC /* [CP] Embed Pods Frameworks */,
+				7765B1413B6C48FDA5329E23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +136,7 @@
 					8FA040691E0E1A4600A139EE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WNAGBXF4G9;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +171,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		398CBE657272C264C09A580B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7765B1413B6C48FDA5329E23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatsTVNow/Pods-CatsTVNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F32F6E01CE23F0196980FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatsTVNow/Pods-CatsTVNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FA040661E0E1A4600A139EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA040841E0E20D800A139EE /* CatVideo.swift in Sources */,
+				8FA040801E0E202900A139EE /* CatsTV.xcdatamodeld in Sources */,
 				8FA040721E0E1A4600A139EE /* SecondViewController.swift in Sources */,
 				8FA0406E1E0E1A4600A139EE /* AppDelegate.swift in Sources */,
+				8FA040821E0E206F00A139EE /* CatDataStore.swift in Sources */,
+				8FA040861E0E21A600A139EE /* CatsApiClient.swift in Sources */,
 				8FA040701E0E1A4600A139EE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +341,11 @@
 		};
 		8FA0407C1E0E1A4600A139EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB977EEBEF8A331ABD151856 /* Pods-CatsTVNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WNAGBXF4G9;
 				INFOPLIST_FILE = CatsTVNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -263,9 +357,11 @@
 		};
 		8FA0407D1E0E1A4600A139EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD81D4BED901048C40C8A2D /* Pods-CatsTVNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WNAGBXF4G9;
 				INFOPLIST_FILE = CatsTVNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -294,8 +390,22 @@
 				8FA0407D1E0E1A4600A139EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8FA0407E1E0E202900A139EE /* CatsTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8FA0407F1E0E202900A139EE /* CatsTV.xcdatamodel */,
+			);
+			currentVersion = 8FA0407F1E0E202900A139EE /* CatsTV.xcdatamodel */;
+			path = CatsTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8FA040621E0E1A4600A139EE /* Project object */;
 }

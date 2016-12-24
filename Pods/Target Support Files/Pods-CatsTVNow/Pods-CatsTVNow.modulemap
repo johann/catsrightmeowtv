@@ -1,0 +1,6 @@
+framework module Pods_CatsTVNow {
+  umbrella header "Pods-CatsTVNow-umbrella.h"
+
+  export *
+  module * { export * }
+}
